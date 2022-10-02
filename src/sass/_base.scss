@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Nunito:wght@200;300;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Didact Gothic", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(
+    0deg,
+    rgba(62, 89, 80, 1) 0%,
+    rgba(84, 186, 185, 1) 90%
+  );
+  color: $light-beige;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+h1 {
+  font-size: 2.5rem;
+  @include md {
+    font-size: 3rem;
+  }
+}
+h2 {
+  font-size: 1.6rem;
+  @include md {
+    font-size: 1.8rem;
+  }
+}
+h3 {
+  font-size: 1.2rem;
+  @include md {
+    font-size: 1.5rem;
+  }
+}
+a {
+  text-decoration: none;
+}
+// body {
+//   color: $dark-green;
+//   background-color: $light-beige;
+// }
+// .background-path {
+//   position: absolute;
+//   top: 0;
+//   right: 0px;
+//   width: 50vw;
+//   height: 100vh;
+//   background: linear-gradient(
+//     0deg,
+//     rgba(84, 186, 185, 1) 0%,
+//     rgba(62, 89, 80, 1) 90%
+//   );
+//   border-radius: 21% 79% 0% 100% / 41% 0% 100% 59%;
+//   z-index: -99;
+//   @include md {
+//     width: 30vw;
+//   }
+// }
+// Header styles
+.main-menu {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    @include md {
+      max-width: 90%;
+      justify-content: flex-end;
+    }
+    li {
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      margin: 0.4rem;
+      border-radius: 5rem;
+      div {
+        z-index: 2;
+        text-decoration: none;
+        margin: 0.2em;
+        padding: 0.2rem 0.2rem 0.1rem;
+        border-radius: 6rem;
+        box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.4),
+          -6px -6px 10px rgba(255, 255, 255, 0.2),
+          6px 6px 8px rgba(255, 255, 255, 0.4),
+          2px 2px 6px rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.2);
+        &:hover {
+          cursor: pointer;
+        }
+        &:active {
+          background: rgba(255, 255, 255, 0.4);
+          box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.8),
+            -6px -6px 10px rgba(255, 255, 255, 0.4),
+            6px 6px 8px rgba(255, 255, 255, 0.6),
+            2px 2px 6px rgba(255, 255, 255, 0.3);
+        }
+        img {
+          width: 2rem;
+          display: block;
+        }
+        .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          color: $light-beige;
+          text-align: center;
+          margin-top: 10px;
+          border-radius: 6px;
+          padding: 5px 0;
+          background: rgba(255, 255, 255, 0.4);
+          box-shadow: 0 8px 32px 0 rgb(243 245 241 / 20%);
+          backdrop-filter: blur(10.5px);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+      }
+    }
+    li:hover {
+      cursor: pointer;
+      .tooltiptext {
+        visibility: visible;
+      }
+    }
+  }
+}
+.custom-shape-divider-top-1664491833 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -10;
+}
+
+.custom-shape-divider-top-1664491833 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 490px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1664469025 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1664469025 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 283px;
+}
+
+.footer {
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  .footer-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20px);
+    min-width: 85px;
+    gap: 0.5rem;
+  }
+}

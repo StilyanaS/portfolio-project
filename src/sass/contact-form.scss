@@ -1,0 +1,89 @@
+@import "variables";
+@import "button";
+.main-menu {
+  position: relative;
+}
+.main {
+  display: grid;
+  margin: 2rem auto 6rem;
+  .form-div {
+    display: grid;
+    place-content: center;
+    width: clamp(20rem, 23vw, 30rem);
+    height: clamp(400px, 100% - 5rem, 85vh);
+    margin: 1rem auto 1rem;
+    padding-top: 1rem;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: -10px -10px 40px rgba(249, 244, 238, 0.6),
+      10px 10px 30px #aeaec040, inset -10px -10px 10px #aeaec025,
+      inset 10px 10px 10px rgba(249, 244, 238, 0.4);
+    z-index: 1;
+    .logo {
+      margin-top: 2rem;
+      width: 5rem;
+      height: 5rem;
+      place-self: center;
+      background: url(/assets/esux-photo.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      border-radius: 50%;
+      box-shadow: 0px 0px 2px rgba(239, 230, 216, 0.2),
+        0px 0px 0px 5px rgba(239, 230, 216, 0.2),
+        8px 8px 5px rgba(251, 248, 243, 0.2),
+        -8px -8px 15px rgba(251, 248, 243, 0.4);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+      margin: 0.8rem auto;
+    }
+
+    form {
+      padding: 1rem;
+    }
+    form input {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 1rem;
+      color: $dark-green;
+      padding: 1.3rem 0.8rem 1.3rem;
+      font-family: "Nunito", sans-serif;
+    }
+    input::placeholder {
+      color: $dark-green;
+    }
+    .name,
+    .email {
+      border-radius: 25px;
+      box-shadow: inset 8px 8px 8px rgba(203, 206, 209, 0.6),
+        inset -8px -8px 8px rgba(251, 248, 243, 0.6);
+      margin-bottom: 1rem;
+    }
+
+    form svg {
+      height: 22px;
+      margin: 0 0.5rem -0.2rem 1.6rem;
+    }
+
+    .card-button {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+      min-width: 12rem;
+      &_box {
+        font-size: 0.6rem;
+        min-width: 12rem;
+        color: $light-beige;
+      }
+      .inside-1,
+      .inside-2 {
+        min-width: 12rem;
+      }
+    }
+  }
+}
