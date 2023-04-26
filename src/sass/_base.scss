@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 body {
@@ -45,28 +46,7 @@ h3 {
 a {
   text-decoration: none;
 }
-// body {
-//   color: $dark-green;
-//   background-color: $light-beige;
-// }
-// .background-path {
-//   position: absolute;
-//   top: 0;
-//   right: 0px;
-//   width: 50vw;
-//   height: 100vh;
-//   background: linear-gradient(
-//     0deg,
-//     rgba(84, 186, 185, 1) 0%,
-//     rgba(62, 89, 80, 1) 90%
-//   );
-//   border-radius: 21% 79% 0% 100% / 41% 0% 100% 59%;
-//   z-index: -99;
-//   @include md {
-//     width: 30vw;
-//   }
-// }
-// Header styles
+
 .main-menu {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(30px);
@@ -165,6 +145,7 @@ a {
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  z-index: -20;
 }
 
 .custom-shape-divider-bottom-1664469025 svg {
@@ -178,10 +159,20 @@ a {
   display: grid;
   place-content: center;
   padding: 1rem;
+
   .footer-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 20px);
-    min-width: 85px;
+    grid-template-columns: repeat(auto-fit, 40px);
+    min-width: 140px;
     gap: 0.5rem;
+    place-content: center;
+    place-items: center;
+    img {
+      min-width: 2rem;
+      margin: 0.4rem 0.6rem;
+    }
+    .img {
+      min-width: 85px;
+    }
   }
 }

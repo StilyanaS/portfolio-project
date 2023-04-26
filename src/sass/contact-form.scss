@@ -23,8 +23,11 @@
       margin-top: 2rem;
       width: 5rem;
       height: 5rem;
+      padding-top: 1rem;
       place-self: center;
-      background: url(/assets/esux-photo.jpg);
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(30px);
+      // background: url(/assets/esux-photo.jpg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -40,6 +43,7 @@
       font-size: 1.5rem;
       letter-spacing: 0.5px;
       margin: 0.8rem auto;
+      font-family: "Nunito", sans-serif;
     }
 
     form {
@@ -78,7 +82,7 @@
       &_box {
         font-size: 0.6rem;
         min-width: 12rem;
-        color: $light-beige;
+        color: $dark-green;
       }
       .inside-1,
       .inside-2 {
