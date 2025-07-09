@@ -229,7 +229,7 @@
 }
 .about-me {
   position: relative;
-  max-width: 700px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 5rem;
   z-index: 10;
@@ -237,9 +237,6 @@
     position: absolute;
     z-index: -1;
     top: 0;
-  }
-  p {
-    text-align: center;
   }
   .footer-button {
     display: grid;
@@ -326,6 +323,24 @@
     &:hover .inside-2 {
       animation: waves 4s linear infinite;
     }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .link {
+    border-bottom: #54e1d4 2px solid;
+    a {
+      font-weight: 800;
+      color: #54e1d4;
+    }
+  }
+  .links {
+    margin-top: .5rem;
+    display: flex;
+    gap: 1rem;
   }
 }
 .footer-path {
@@ -456,4 +471,9 @@
     transform: scale(1.7);
     opacity: 0;
   }
+}
+
+// Utility classes
+.text-left {
+  text-align: left !important;
 }
